@@ -1,2 +1,4 @@
 .idea/
-vectorModels/
+sourceDomainCorpus/
+word2vecModels/
+tmpFiles/
