@@ -3,3 +3,4 @@ __pycache__/
 sourceDomainCorpus/
 word2vecModels/
 tmpFiles/
+trainedModels/
