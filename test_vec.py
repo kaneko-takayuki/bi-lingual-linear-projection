@@ -81,7 +81,7 @@ def main():
             variable_vec = Variable(xp_vec)
             y = conf.model.fwd(variable_vec).data[0]
             str_y = list(map(str, y))
-            f.write(word + '\t' + ','.join(str_y))
+            f.write(word + '\t' + ','.join(str_y) + '\n')
     print('output end')
 
 if __name__ == '__main__':
