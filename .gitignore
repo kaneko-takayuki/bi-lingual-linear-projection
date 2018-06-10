@@ -2,5 +2,7 @@ __pycache__/
 .idea/
 sourceDomainCorpus/
 word2vecModels/
+tmpFiles1/
+trainedModels1/
 tmpFiles/
 trainedModels/

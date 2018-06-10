@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# 3. 英語word2vecと、日本語word2vecのファイルは重いから、同時に開きたくない。2で求めた単語ペアについて、あらかじめベクトル展開する。
+
 import argparse
 from gensim.models import KeyedVectors
 import constants
@@ -58,7 +60,7 @@ def main(corpus):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='get word2vec japanese word')
-    parser.add_argument('--corpus', '-c', type=str, help='source domain corpus(english only now)')
+    parser.add_argument('--corpus', '-c', type=str, help='word_pair.csv')
     args = parser.parse_args()
 
     main(args.corpus)

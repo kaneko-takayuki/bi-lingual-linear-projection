@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# 4. 3で得たベクトルペアを元に、ディープラーニングによる学習を行う
+
 import argparse
 import chainer
 import numpy as np
@@ -77,8 +79,8 @@ def main(corpus):
         ConfFFNN.write(save_file, conf)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='get word2vec japanese word')
-    parser.add_argument('--corpus', '-c', type=str, help='source domain corpus(english only now)')
+    parser = argparse.ArgumentParser(description='train by word embeddings pair')
+    parser.add_argument('--corpus', '-c', type=str, help='word_pair.csv')
     args = parser.parse_args()
 
     main(args.corpus)

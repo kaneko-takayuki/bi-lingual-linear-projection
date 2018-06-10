@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# 6. 5で求めたベクトルについて、コサイン類似度を求める。
+
 import numpy as np
 from gensim.models import KeyedVectors
 import constants

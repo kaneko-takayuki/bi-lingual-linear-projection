@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# 1. コーパス中最も出現頻度の高い自立語単語を上位n個抽出する
+
 import argparse
 import treetaggerwrapper as ttw
 
@@ -50,7 +52,7 @@ def main(corpus, n):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='extract most frequently n-words')
     parser.add_argument('--corpus', '-c', type=str, help='source domain corpus(english only now)')
-    parser.add_argument('--topN', '-n', type=int, default=2000, help='extract top n-words')
+    parser.add_argument('--topN', '-n', type=int, default=10000, help='extract top n-words')
     args = parser.parse_args()
 
     main(args.corpus, args.topN)

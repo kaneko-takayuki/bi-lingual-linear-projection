@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# 5. 文書中に出てくる全ての自立語単語について、4で作成したモデルを通して変換を行う
+
 import argparse
 import constants
 import treetaggerwrapper as ttw
@@ -85,6 +87,6 @@ def main():
     print('output end')
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='get word2vec japanese word')
+    parser = argparse.ArgumentParser(description='convert source domain word embeddings')
     args = parser.parse_args()
     main()

@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+# 2. 1で抽出した単語ファイルを受け取り、google翻訳に掛ける。対となる日本語単語を求める
+
 import argparse
 from google.cloud import translate
 
@@ -28,7 +30,7 @@ def main(corpus):
             outputFile.write(en_word + ',' + ja_word + ',' + count)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='seek pair words')
+    parser = argparse.ArgumentParser(description='seek word pair by google translation')
     parser.add_argument('--corpus', '-c', type=str, help='most_frequently_file(csv)')
     args = parser.parse_args()
 
